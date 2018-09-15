@@ -1,0 +1,18 @@
+<configuration>
+    <branches>
+        <branch>
+            <pattern>.*</pattern>
+            <versionFormat>${version.release}-${branch}-SNAPSHOT</versionFormat>
+        </branch>
+    </branches>
+    <tags>
+        <tag>
+            <pattern>version/.*</pattern>
+            <prefix>version/</prefix>
+            <versionFormat>${tag}</versionFormat>
+        </tag>
+    </tags>
+    <!--<commit>-->
+        <!--<versionFormat>${commit}</versionFormat>-->
+    <!--</commit>-->
+</configuration>
