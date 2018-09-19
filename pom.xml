@@ -6,7 +6,8 @@
 
   <groupId>org.arhan</groupId>
   <artifactId>component</artifactId>
-  <version>1.0${project.vcs.branch}-SNAPSHOT</version>
+  <!--<version>1.0${project.vcs.branch}-SNAPSHOT</version>-->
+  <version>1.0-SNAPSHOT</version>
 
   <name>component</name>
   <url>http://www.example.com</url>
