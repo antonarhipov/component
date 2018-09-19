@@ -35,7 +35,7 @@
         <version>2.8.2</version>
         <artifactId>maven-deploy-plugin</artifactId>
         <configuration>
-          <classifier>${project.vcs.branch}</classifier>
+          <classifier>master</classifier>
         </configuration>
       </plugin>
     </plugins>
