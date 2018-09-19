@@ -30,39 +30,38 @@
 
   <build>
     <plugins>
-      <!--<plugin>-->
-        <!--<artifactId>maven-jar-plugin</artifactId>-->
-        <!--<version>3.0.2</version>-->
-        <!--<executions>-->
-          <!--<execution>-->
-            <!--<id>jar</id>-->
-            <!--<phase>package</phase>-->
-            <!--<goals>-->
-              <!--<goal>jar</goal>-->
-            <!--</goals>-->
-            <!--<configuration>-->
-              <!--<classifier>${project.vcs.branch}</classifier>-->
-              <!--&lt;!&ndash; Include or exclude some classes &ndash;&gt;-->
-            <!--</configuration>-->
-          <!--</execution>-->
-        <!--</executions>-->
-      <!--</plugin>-->
       <plugin>
-        <version>2.8.2</version>
-        <artifactId>maven-deploy-plugin</artifactId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.0.2</version>
         <executions>
           <execution>
-            <id>deploy</id>
-            <phase>deploy</phase>
+            <id>jar</id>
+            <phase>package</phase>
             <goals>
-              <goal>deploy</goal>
+              <goal>jar</goal>
             </goals>
+            <configuration>
+              <classifier>${project.vcs.branch}</classifier>
+            </configuration>
           </execution>
         </executions>
-        <configuration>
-          <classifier>${project.vcs.branch}</classifier>
-        </configuration>
       </plugin>
+      <!--<plugin>-->
+        <!--<version>2.8.2</version>-->
+        <!--<artifactId>maven-deploy-plugin</artifactId>-->
+        <!--<executions>-->
+          <!--<execution>-->
+            <!--<id>deploy</id>-->
+            <!--<phase>deploy</phase>-->
+            <!--<goals>-->
+              <!--<goal>deploy</goal>-->
+            <!--</goals>-->
+          <!--</execution>-->
+        <!--</executions>-->
+        <!--<configuration>-->
+          <!--<classifier>${project.vcs.branch}</classifier>-->
+        <!--</configuration>-->
+      <!--</plugin>-->
     </plugins>
     <!--<pluginManagement>-->
       <!--<plugins>-->
