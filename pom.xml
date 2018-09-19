@@ -29,6 +29,15 @@
   </dependencies>
 
   <build>
+    <plugins>
+      <plugin>
+        <inherited>true</inherited>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <configuration>
+          <classifier>${project.vcs.branch}</classifier>
+        </configuration>
+      </plugin>
+    </plugins>
     <!--<pluginManagement>-->
       <!--<plugins>-->
         <!--<plugin>-->
