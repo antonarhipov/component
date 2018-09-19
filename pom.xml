@@ -55,12 +55,12 @@
             <id>deploy</id>
             <phase>deploy</phase>
             <goals>
-              <goal>deploy-file</goal>
+              <goal>deploy</goal>
             </goals>
           </execution>
         </executions>
         <configuration>
-          <classifier>master</classifier>
+          <classifier>${project.vcs.branch}</classifier>
         </configuration>
       </plugin>
     </plugins>
