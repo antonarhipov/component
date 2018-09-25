@@ -2,7 +2,7 @@ package org.arhan;
 
 public class Component {
 
-  public void foo(String s){
+  public void foo(){
     System.out.println("Component.foo");
   }
 
